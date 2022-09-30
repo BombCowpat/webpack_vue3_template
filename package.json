@@ -1,0 +1,11 @@
+{
+  "name": "webpack_template",
+  "version": "1.0.0",
+  "description": "1. readme.md 2. nodejs(v14.20.0) 3. pnpm 初始化 4. git .gitignore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chenyanfei",
+  "license": "ISC"
+}
