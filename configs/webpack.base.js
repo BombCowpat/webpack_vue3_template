@@ -11,8 +11,18 @@ const webpackBase = {
   context: path.resolve(__dirname, '../'),
   entry: {
     // 必须以 './' 开头的相对路径，不能省略
-    app: './src/index.js',
-    print: './src/print.js',
+    // app: './src/index.js',
+    // print: './src/print.js',
+    app: {
+      import: './src/index.js',
+      dependOn: ['lodash', 'dayjs'],
+    },
+    print: {
+      import: './src/print.js',
+      dependOn: ['lodash', 'dayjs'],
+    },
+    lodash: 'lodash',
+    dayjs: 'dayjs',
   },
   output: {
     // 出口路径必须指定为绝对路径
@@ -26,6 +36,9 @@ const webpackBase = {
       minify: false,
     }),
   ],
+  optimization: {
+    runtimeChunk: 'single',
+  },
 }
 
 module.exports = webpackBase

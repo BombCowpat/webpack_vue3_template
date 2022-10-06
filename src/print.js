@@ -1,3 +1,4 @@
+import _ from 'lodash'
 export default function print() {
-  console.log('Hello World')
+  console.log(_.join(['Another', 'module', 'loaded!'], ' '))
 }

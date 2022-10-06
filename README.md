@@ -22,6 +22,7 @@
 ## 概念
 [Module API](https://webpack.js.org/api/module-methods/)
 [loader system](https://webpack.js.org/concepts/loaders/)
+[Code Splitting](https://webpack.js.org/guides/code-splitting/)
 
 ## 功能
 1. 项目结构
