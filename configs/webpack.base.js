@@ -14,7 +14,6 @@ const webpackBase = {
   output: {
     // 出口路径必须指定为绝对路径
     path: path.resolve(__dirname, '../dist'),
-    clean: true,
   },
 }
 

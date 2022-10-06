@@ -6,6 +6,7 @@ specifiers:
   lodash: ^4.17.21
   webpack: ^5.74.0
   webpack-cli: ^4.10.0
+  webpack-manifest-plugin: ^5.0.0
   webpack-merge: ^5.8.0
 
 dependencies:
@@ -16,6 +17,7 @@ devDependencies:
   html-webpack-plugin: registry.npmmirror.com/html-webpack-plugin/5.5.0_webpack@5.74.0
   webpack: registry.npmmirror.com/webpack/5.74.0_webpack-cli@4.10.0
   webpack-cli: registry.npmmirror.com/webpack-cli/4.10.0_webpack@5.74.0
+  webpack-manifest-plugin: registry.npmmirror.com/webpack-manifest-plugin/5.0.0_webpack@5.74.0
   webpack-merge: registry.npmmirror.com/webpack-merge/5.8.0
 
 packages:
@@ -1370,6 +1372,12 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
+  registry.npmmirror.com/source-list-map/2.0.1:
+    resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/source-list-map/-/source-list-map-2.0.1.tgz}
+    name: source-list-map
+    version: 2.0.1
+    dev: true
+
   registry.npmmirror.com/source-map-support/0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/source-map-support/-/source-map-support-0.5.21.tgz}
     name: source-map-support
@@ -1549,6 +1557,20 @@ packages:
       webpack-merge: registry.npmmirror.com/webpack-merge/5.8.0
     dev: true
 
+  registry.npmmirror.com/webpack-manifest-plugin/5.0.0_webpack@5.74.0:
+    resolution: {integrity: sha512-8RQfMAdc5Uw3QbCQ/CBV/AXqOR8mt03B6GJmRbhWopE8GzRfEpn+k0ZuWywxW+5QZsffhmFDY1J6ohqJo+eMuw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/webpack-manifest-plugin/-/webpack-manifest-plugin-5.0.0.tgz}
+    id: registry.npmmirror.com/webpack-manifest-plugin/5.0.0
+    name: webpack-manifest-plugin
+    version: 5.0.0
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      webpack: ^5.47.0
+    dependencies:
+      tapable: registry.npmmirror.com/tapable/2.2.1
+      webpack: registry.npmmirror.com/webpack/5.74.0_webpack-cli@4.10.0
+      webpack-sources: registry.npmmirror.com/webpack-sources/2.3.1
+    dev: true
+
   registry.npmmirror.com/webpack-merge/5.8.0:
     resolution: {integrity: sha512-/SaI7xY0831XwP6kzuwhKWVKDP9t1QY1h65lAFLbZqMPIuYcD9QAW4u9STIbU9kaJbPBB/geU/gLr1wDjOhQ+Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/webpack-merge/-/webpack-merge-5.8.0.tgz}
     name: webpack-merge
@@ -1557,6 +1579,16 @@ packages:
     dependencies:
       clone-deep: registry.npmmirror.com/clone-deep/4.0.1
       wildcard: registry.npmmirror.com/wildcard/2.0.0
+    dev: true
+
+  registry.npmmirror.com/webpack-sources/2.3.1:
+    resolution: {integrity: sha512-y9EI9AO42JjEcrTJFOYmVywVZdKVUfOvDUPsJea5GIr1JOEGFVqwlY2K098fFoIjOkDzHn2AjRvM8dsBZu+gCA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/webpack-sources/-/webpack-sources-2.3.1.tgz}
+    name: webpack-sources
+    version: 2.3.1
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      source-list-map: registry.npmmirror.com/source-list-map/2.0.1
+      source-map: registry.npmmirror.com/source-map/0.6.1
     dev: true
 
   registry.npmmirror.com/webpack-sources/3.2.3:
