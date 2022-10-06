@@ -4,8 +4,19 @@
   "description": "1. readme.md 2. nodejs(v14.20.0) 3. pnpm 初始化 4. git .gitignore",
   "main": "index.js",
   "scripts": {
+    "build:prod": "webpack --config configs/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "chenyanfei",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
