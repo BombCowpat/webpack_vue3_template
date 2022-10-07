@@ -1,14 +1,23 @@
-import _ from 'lodash'
-import print from './print'
-import dayjs from 'dayjs'
-
-function component() {
-  const element = document.createElement('div')
-  const btn = document.createElement('button')
-  btn.innerHTML = dayjs(new Date()).format('DD/MM/YYYY') + _.join(['Hello', 'World'], ' ')
-  btn.onclick = print
-  element.appendChild(btn)
-  return element
+async function getComponent() {
+  try {
+    const { default: _ } = await import(/* webpackPrefetch: true */ 'lodash')
+    const element = document.createElement('div')
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ')
+    return element
+  } catch {
+    return 'An error occurred while loading the component'
+  }
 }
 
-document.body.appendChild(component())
+// const btn = document.createElement('button')
+// btn.innerHTML = 'load'
+// btn.onclick = function () {
+//   getComponent().then(component => {
+//     document.body.appendChild(component)
+//   })
+// }
+
+// document.body.appendChild(btn)
+getComponent().then(component => {
+  document.body.appendChild(component)
+})

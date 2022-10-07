@@ -34,3 +34,9 @@
 7. 代码压缩
 8. TreeShaking
 9. 静态资源 copy-webpack-plugin
+
+## 
+1. 开发服务器配置
+2. 代码分割和preload/prefetch
+3. 输出管理
+4. 资源管理
