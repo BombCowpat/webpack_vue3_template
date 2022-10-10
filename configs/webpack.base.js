@@ -14,6 +14,7 @@ const webpackBase = {
     app: './src/index.js',
   },
   output: {
+    filename: '[name].[contenthash].js',
     // 出口路径必须指定为绝对路径
     path: path.resolve(__dirname, '../dist'),
   },
@@ -25,6 +26,18 @@ const webpackBase = {
       minify: false,
     }),
   ],
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
 }
 
 module.exports = webpackBase

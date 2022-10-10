@@ -37,6 +37,12 @@
 
 ## 
 1. 开发服务器配置
-2. 代码分割和preload/prefetch
+2. import()代码分割和preload/prefetch以及懒加载
 3. 输出管理
 4. 资源管理
+5. 输出文件名与浏览器缓存
+6. webpack配置中的环境变量 env 
+7. Content Security Policies 防止XSS
+8. require,require.context
+9. HMR实现
+10. TreeShaking实现

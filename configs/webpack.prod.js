@@ -20,7 +20,7 @@ const webpackProd = merge(webpackBase, {
       ],
     }),
     // 输出文件清单
-    new WebpackManifestPlugin(),
+    // new WebpackManifestPlugin(),
   ],
 })
 
