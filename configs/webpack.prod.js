@@ -6,6 +6,7 @@ const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 /** @type { import('webpack').Configuration } */
 const webpackProd = merge(webpackBase, {
   mode: 'production',
+  devtool: false,
   output: {
     clean: true,
   },
