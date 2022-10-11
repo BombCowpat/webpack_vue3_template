@@ -46,3 +46,5 @@
 8. require,require.context
 9. HMR实现
 10. TreeShaking实现
+11. 集成babel或者swc处理js
+12. css处理
