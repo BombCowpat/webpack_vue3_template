@@ -26,7 +26,11 @@ module.exports = function (env) {
       new webpack.DefinePlugin({
         'process.env': require(`./envs/${env.env_config}.js`),
       }),
-      new MiniCssExtractPlugin(),
+      // extract css into its own file
+      new MiniCssExtractPlugin({
+        filename: 'css/[name].[contenthash:8].css',
+        chunkFilename: path.join('css/[name].[contenthash:8].css'),
+      }),
       // 复制静态资源
       new CopyWebpackPlugin({
         patterns: [

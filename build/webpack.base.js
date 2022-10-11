@@ -17,10 +17,11 @@ const webpackBase = {
     app: './src/index.js',
   },
   output: {
-    filename: '[name].[contenthash].js',
     // 出口路径必须指定为绝对路径
     path: path.resolve(__dirname, '../dist'),
     publicPath: publicPath,
+    filename: 'js/[name].[contenthash].js',
+    chunkFilename: 'js/[name].[contenthash].js',
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -46,7 +47,7 @@ const webpackBase = {
         test: /\.(png|jpe?g|gif|svg|webp)(\?.*)?$/,
         type: 'asset',
         generator: {
-          filename: path.join(publicPath, 'img/[name].[hash:8][ext]'),
+          filename: 'img/[name].[hash:8][ext]',
         },
         parser: {
           dataUrlCondition: {
@@ -58,14 +59,14 @@ const webpackBase = {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         type: 'asset/resource',
         generator: {
-          filename: path.join(publicPath, 'fonts/[name].[hash:8][ext]'),
+          filename: 'fonts/[name].[hash:8][ext]',
         },
       },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         type: 'asset/resource',
         generator: {
-          filename: path.join(publicPath, 'media/[name].[hash:8][ext]'),
+          filename: 'media/[name].[hash:8][ext]',
         },
       },
     ],
@@ -82,6 +83,7 @@ const webpackBase = {
       filename: path.resolve(__dirname, '../dist/index.html'),
       template: 'index.html',
       minify: false,
+      favicon: 'favicon.ico',
     }),
   ],
   optimization: {
