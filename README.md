@@ -47,4 +47,6 @@
 9. HMR实现
 10. TreeShaking实现
 11. 集成babel或者swc处理js
-12. css处理
+12. css处理，全局css
+13. 环境变量
+14. 项目规范
