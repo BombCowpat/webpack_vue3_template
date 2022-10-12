@@ -14,6 +14,8 @@ module.exports = function (env) {
     devtool: false,
     output: {
       clean: true,
+      filename: 'js/[name].[contenthash].js',
+      chunkFilename: 'js/[name].[contenthash].js',
     },
     module: {
       rules: utils.styleLoaders({

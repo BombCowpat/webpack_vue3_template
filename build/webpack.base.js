@@ -20,8 +20,8 @@ const webpackBase = {
     // 出口路径必须指定为绝对路径
     path: path.resolve(__dirname, '../dist'),
     publicPath: publicPath,
-    filename: 'js/[name].[contenthash].js',
-    chunkFilename: 'js/[name].[contenthash].js',
+    filename: 'js/[name].js',
+    chunkFilename: 'js/[name].js',
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
